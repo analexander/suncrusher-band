@@ -2,7 +2,6 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
@@ -62,11 +61,11 @@ export default function BackToTop(props) {
         </Toolbar>
       </AppBar>
       <Toolbar id="back-to-top-anchor" />
-      <Container>
+      {/* <Container>
         <Box my={2}>
         Content here
         </Box>
-      </Container>
+      </Container> */}
       <ScrollTop {...props}>
         <Fab color="secondary" size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />

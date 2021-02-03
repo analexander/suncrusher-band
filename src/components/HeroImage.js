@@ -31,6 +31,7 @@ export default function ImgMediaCard() {
           image={BandPhoto}
           title="band photo"
           className={classes.marginAutoItem}
+          position='fixed'
         />
         {/* <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

@@ -27,20 +27,12 @@ const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
   },
-  fabButton: {
-    position: 'absolute',
-    zIndex: 1,
-    top: -30,
-    left: 0,
-    right: 0,
-    margin: '0 auto',
-  },
   logo: {
     maxWidth: 160,
   },
 }));
 
-export default function BottomAppBar(props) {
+export default function BottomAppBar() {
   const classes = useStyles();
 
   return (

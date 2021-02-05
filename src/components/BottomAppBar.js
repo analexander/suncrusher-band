@@ -5,8 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Slide from '@material-ui/core/Slide';
+import Logo from '../images/SunCrusher-logo_UPDATED_W.png'
 
 const useStyles = makeStyles((theme) => ({
   text: {
@@ -36,19 +35,10 @@ const useStyles = makeStyles((theme) => ({
     right: 0,
     margin: '0 auto',
   },
+  logo: {
+    maxWidth: 160,
+  },
 }));
-
-function HideOnScroll(props) {
-    const { children, window } = props;
-    const trigger = useScrollTrigger({ target: window });
-  
-    return (
-      <Slide appear={false} direction="up" in={!trigger}>
-        {children}
-      </Slide>
-    );
-  }
-
 
 export default function BottomAppBar(props) {
   const classes = useStyles();
@@ -58,14 +48,14 @@ export default function BottomAppBar(props) {
       <CssBaseline />
       <Paper square className={classes.paper}>
       </Paper>
-      <HideOnScroll {...props}>
-      <AppBar position="fixed" className={classes.appBar} style={{backgroundColor: 'black'}}>
+      <AppBar className={classes.appBar} style={{backgroundColor: 'black'}}>
         <Toolbar>
+        <img src={Logo} alt="logo" className={classes.logo}/>
         <Button color="inherit">About</Button>
         <Button color="inherit">Shop</Button>
+        <Button color="inherit">Contact Us</Button>
         </Toolbar>
       </AppBar>
-      </HideOnScroll>
     </React.Fragment>
   );
 }

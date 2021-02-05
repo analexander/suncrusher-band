@@ -2,6 +2,7 @@ import React from 'react';
 import AppBar from './components/AppBar'
 import HeroImage from './components/HeroImage'
 import BottomAppBar from './components/BottomAppBar'
+import AboutUs from './components/AboutUs'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       backgroundColor: 'black'}}>
     < AppBar />
     < HeroImage />
+    < AboutUs />
     < BottomAppBar />
     </div>
   );

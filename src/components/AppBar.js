@@ -9,7 +9,6 @@ import Slide from '@material-ui/core/Slide';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
-import Logo from '../images/SunCrusher-logo_UPDATED_W.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +18,11 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     maxWidth: 160,
-  }
+  },
+  rightToolbar: {
+    marginLeft: "auto",
+    marginRight: -12
+  },
 }));
 
 function ScrollTop(props) {
@@ -66,9 +69,9 @@ export default function BackToTop(props) {
       <HideOnScroll {...props}>
       <AppBar style={{backgroundColor: 'transparent'}}>
         <Toolbar>
-        <img src={Logo} alt="logo" className={classes.logo}/>
-          <Button color="inherit">About</Button>
+          <Button color="inherit" className={classes.rightToolbar}>About</Button>
           <Button color="inherit">Shop</Button>
+          <Button color="inherit">Contact Us</Button>
         </Toolbar>
       </AppBar>
       </HideOnScroll>

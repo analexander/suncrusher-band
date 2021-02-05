@@ -71,7 +71,7 @@ export default function BackToTop(props) {
         <Toolbar>
           <Button color="inherit" className={classes.rightToolbar}>About</Button>
           <Button color="inherit">Shop</Button>
-          <Button color="inherit">Contact Us</Button>
+          <Button color="inherit">Contact</Button>
         </Toolbar>
       </AppBar>
       </HideOnScroll>

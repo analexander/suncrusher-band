@@ -53,7 +53,7 @@ export default function BottomAppBar(props) {
         <img src={Logo} alt="logo" className={classes.logo}/>
         <Button color="inherit">About</Button>
         <Button color="inherit">Shop</Button>
-        <Button color="inherit">Contact Us</Button>
+        <Button color="inherit">Contact</Button>
         </Toolbar>
       </AppBar>
     </React.Fragment>

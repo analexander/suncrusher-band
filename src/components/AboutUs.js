@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import {useSpring, animated} from 'react-spring'
 
 const useStyles = makeStyles({
   root: {
@@ -25,7 +26,14 @@ const useStyles = makeStyles({
 export default function OutlinedCard() {
   const classes = useStyles();
 
+  const props = useSpring({
+    config: { duration: 2000 },
+    opacity: 1,
+    from: { opacity: 0 },
+  })
+
   return (
+    <animated.div style={props}>
     <Card className={classes.root} variant="outlined" style={{backgroundColor: 'black'}}>
       <CardContent>
         <Typography className={classes.title} gutterBottom>
@@ -45,5 +53,6 @@ export default function OutlinedCard() {
         </Typography>
       </CardContent>
     </Card>
+    </animated.div>
   );
 }

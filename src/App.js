@@ -4,7 +4,6 @@ import HeroImage from './components/HeroImage'
 import BottomAppBar from './components/BottomAppBar'
 import AboutUs from './components/AboutUs'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import ContactForm from './components/ContactForm';
 
 const theme = createMuiTheme({
   typography: {
@@ -22,7 +21,6 @@ function App() {
     < AppBar />
     < HeroImage />
     < AboutUs />
-    < ContactForm />
     < BottomAppBar />
     </div>
     </ThemeProvider>

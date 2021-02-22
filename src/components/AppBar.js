@@ -12,6 +12,8 @@ import Zoom from '@material-ui/core/Zoom';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import { Icon } from '@iconify/react';
+import spotifyIcon from '@iconify-icons/mdi/spotify';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -79,11 +81,9 @@ export default function BackToTop(props) {
       <AppBar style={{backgroundColor: 'transparent'}}>
         <Toolbar className={classes.rightToolbar} >
           <InstagramIcon className={classes.icon}/>
-          {/* <Button color="inherit" className={classes.rightToolbar}>About</Button> */}
           <FacebookIcon className={classes.icon}/>
           <YouTubeIcon className={classes.icon}/>
-          {/* <Button color="inherit">Shop</Button>
-          <Button color="inherit">Contact</Button> */}
+          <Icon icon={spotifyIcon} className={classes.icon}/>
         </Toolbar>
       </AppBar>
       </HideOnScroll>

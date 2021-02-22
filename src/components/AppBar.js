@@ -9,6 +9,9 @@ import Slide from '@material-ui/core/Slide';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -22,8 +25,13 @@ const useStyles = makeStyles((theme) => ({
   },
   rightToolbar: {
     marginLeft: "auto",
-    marginRight: -12
+    marginRight: -12,
   },
+  icon: {
+    width: 25,
+    height: 25,
+    marginRight: 10
+  }
 }));
 
 function ScrollTop(props) {
@@ -69,10 +77,13 @@ export default function BackToTop(props) {
       <CssBaseline/>
       <HideOnScroll {...props}>
       <AppBar style={{backgroundColor: 'transparent'}}>
-        <Toolbar>
-          <Button color="inherit" className={classes.rightToolbar}>About</Button>
-          <Button color="inherit">Shop</Button>
-          <Button color="inherit">Contact</Button>
+        <Toolbar className={classes.rightToolbar} >
+          <InstagramIcon className={classes.icon}/>
+          {/* <Button color="inherit" className={classes.rightToolbar}>About</Button> */}
+          <FacebookIcon className={classes.icon}/>
+          <YouTubeIcon className={classes.icon}/>
+          {/* <Button color="inherit">Shop</Button>
+          <Button color="inherit">Contact</Button> */}
         </Toolbar>
       </AppBar>
       </HideOnScroll>

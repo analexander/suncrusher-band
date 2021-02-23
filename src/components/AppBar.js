@@ -32,7 +32,10 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     width: 25,
     height: 25,
-    marginRight: 10
+    marginRight: 10,
+    '&:hover': {
+      color: 'red',
+      }
   }
 }));
 
@@ -80,10 +83,10 @@ export default function BackToTop(props) {
       <HideOnScroll {...props}>
       <AppBar style={{backgroundColor: 'transparent'}}>
         <Toolbar className={classes.rightToolbar} >
-          <InstagramIcon className={classes.icon}/>
-          <FacebookIcon className={classes.icon}/>
-          <YouTubeIcon className={classes.icon}/>
-          <Icon icon={spotifyIcon} className={classes.icon}/>
+          <InstagramIcon className={classes.icon} onClick={()=> window.open("https://instagram.com/svncrvsher?igshid=14i3ibkybo5oe", "_blank")}/>
+          <FacebookIcon className={classes.icon} onClick={()=> window.open("https://www.facebook.com/svncrvsher/", "_blank")}/>
+          <YouTubeIcon className={classes.icon} onClick={()=> window.open("https://youtube.com/channel/UCsbWjZ1xagEe0w7YJlCys5Q", "_blank")}/>
+          <Icon icon={spotifyIcon} className={classes.icon} onClick={()=> window.open("https://open.spotify.com/artist/0iQy7yKIe8wEuh7x3xp9HV?si=aWlv4A2gQLeswaskdanXhA", "_blank")}/>
         </Toolbar>
       </AppBar>
       </HideOnScroll>

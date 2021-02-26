@@ -7,9 +7,11 @@ import {useSpring, animated} from 'react-spring'
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    display: 'flex',
     color: 'white',
-    textAlign: 'center'
+    justifyContent: 'center',
+    alignSelf: 'center',
+    textAlign: 'center',
   },
   title: {
     fontSize: 30,
@@ -19,7 +21,7 @@ const useStyles = makeStyles({
       ].join(','),
   },
   pos: {
-    marginBottom: 12,
+    marginBottom: 5,
   },
 });
 

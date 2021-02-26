@@ -31,7 +31,6 @@ export default function ImgMediaCard() {
         <CardMedia
           component="img"
           alt="band photo"
-        //   height="140"
           image={BandPhoto}
           title="band photo"
           className={classes.marginAutoItem}

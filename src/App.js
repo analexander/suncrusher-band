@@ -5,6 +5,7 @@ import BottomAppBar from './components/BottomAppBar'
 import AboutUs from './components/AboutUs'
 import MusicVideo from './components/MusicVideo'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import LandingPage from './pages/LandingPage'
 
 const theme = createMuiTheme({
   typography: {
@@ -19,11 +20,7 @@ function App() {
     <ThemeProvider theme={theme}>
     <div style={{
       backgroundColor: 'black'}}>
-    < AppBar />
-    < HeroImage />
-    < MusicVideo />
-    < AboutUs />
-    < BottomAppBar />
+        <LandingPage />
     </div>
     </ThemeProvider>
   );

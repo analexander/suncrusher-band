@@ -1,9 +1,4 @@
 import React from 'react';
-import AppBar from './components/AppBar'
-import HeroImage from './components/HeroImage'
-import BottomAppBar from './components/BottomAppBar'
-import AboutUs from './components/AboutUs'
-import MusicVideo from './components/MusicVideo'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import LandingPage from './pages/LandingPage'
 

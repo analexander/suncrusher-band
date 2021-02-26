@@ -30,6 +30,11 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     maxWidth: 160,
   },
+  navText: {
+    '&:hover': {
+      color: 'red',
+      }
+    }
 }));
 
 export default function BottomAppBar() {
@@ -43,9 +48,9 @@ export default function BottomAppBar() {
       <AppBar className={classes.appBar} style={{backgroundColor: 'black'}}>
         <Toolbar>
         <img src={Logo} alt="logo" className={classes.logo}/>
-        <Button color="inherit">About</Button>
-        <Button color="inherit">Shop</Button>
-        <Button color="inherit">Contact</Button>
+        <Button color="inherit" className={classes.navText}>About</Button>
+        <Button color="inherit" className={classes.navText}>Shop</Button>
+        <Button color="inherit" className={classes.navText}>Contact</Button>
         </Toolbar>
       </AppBar>
     </React.Fragment>

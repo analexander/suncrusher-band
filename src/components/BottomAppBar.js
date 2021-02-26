@@ -48,9 +48,9 @@ export default function BottomAppBar() {
       <AppBar className={classes.appBar} style={{backgroundColor: 'black'}}>
         <Toolbar>
         <img src={Logo} alt="logo" className={classes.logo}/>
+        <Button color="inherit" className={classes.navText}>Home</Button>
         <Button color="inherit" className={classes.navText}>About</Button>
         <Button color="inherit" className={classes.navText}>Shop</Button>
-        <Button color="inherit" className={classes.navText}>Contact</Button>
         </Toolbar>
       </AppBar>
     </React.Fragment>

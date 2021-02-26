@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import {useSpring, animated} from 'react-spring'
-import BandPhoto from '../images/suncrusherbandwithlogojpg.jpg'
+import BandPhoto from '../images/suncrusherblend.png'
 
 const useStyles = makeStyles({
   root: {

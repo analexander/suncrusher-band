@@ -21,8 +21,8 @@ function App() {
       backgroundColor: 'black'}}>
     < AppBar />
     < HeroImage />
-    < AboutUs />
     < MusicVideo />
+    < AboutUs />
     < BottomAppBar />
     </div>
     </ThemeProvider>

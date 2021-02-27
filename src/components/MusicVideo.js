@@ -10,8 +10,7 @@ const useStyles = makeStyles({
     },
   });
 
-
-function MusicVideo() {
+  export default function MusicVideo() {
 const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -21,5 +20,3 @@ const classes = useStyles();
     </div>
   )
 }
-
-export default MusicVideo

@@ -4,8 +4,8 @@ import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
 import Logo from '../images/SunCrusher-logo_UPDATED_W.png'
+import { Link } from 'wouter';
 
 const useStyles = makeStyles((theme) => ({
   text: {
@@ -33,8 +33,11 @@ const useStyles = makeStyles((theme) => ({
   navText: {
     '&:hover': {
       color: 'red',
-      }
-    }
+      },
+      color: 'white',
+      margin: '20px',
+      textDecoration: 'none'
+    },
 }));
 
 export default function BottomAppBar() {
@@ -48,9 +51,9 @@ export default function BottomAppBar() {
       <AppBar className={classes.appBar} style={{backgroundColor: 'black'}}>
         <Toolbar>
         <img src={Logo} alt="logo" className={classes.logo}/>
-        <Button color="inherit" className={classes.navText}>Home</Button>
-        <Button color="inherit" className={classes.navText}>About</Button>
-        <Button color="inherit" className={classes.navText}>Shop</Button>
+        <Link to="/" className={classes.navText}>HOME</Link>
+        <Link to="/about" className={classes.navText}>ABOUT</Link>
+        <Link to="/merch"className={classes.navText}>SHOP</Link>
         </Toolbar>
       </AppBar>
     </React.Fragment>

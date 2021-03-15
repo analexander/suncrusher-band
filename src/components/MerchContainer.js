@@ -10,11 +10,10 @@ const useStyles = makeStyles({
   root: {
     display: 'flex',
     flexGrow: 1,
-    justify: "space-around"
   },
-  marginAutoItem: {
-    margin: 'auto'
-  },
+//   marginAutoItem: {
+//     margin: 'auto'
+//   },
 });
 
 export default function NestedGrid() {
@@ -35,7 +34,7 @@ export default function NestedGrid() {
                 alt="placeholder"
                 image={PlaceholderImg}
                 title="placeholder"
-                className={classes.marginAutoItem}
+                // className={classes.marginAutoItem}
                 />
             </CardActionArea>
         </Card>

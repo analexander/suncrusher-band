@@ -9,7 +9,9 @@ const theme = createMuiTheme({
       'Marvel',
       'sans-serif',
     ].join(','),
-  }});
+  },
+  shadows: ["none"]
+});
 
 
 

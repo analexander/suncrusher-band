@@ -3,13 +3,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import MerchContainer from './MerchContainer';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     display: 'flex',
     justify: 'space-around'
   }
-}));
+});
 
 export default function NestedGrid() {
   const classes = useStyles();

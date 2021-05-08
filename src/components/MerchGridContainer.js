@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     display: 'flex',
-    justify: "space-around"
+    justify: "space-around",
   }
 }));
 
@@ -32,23 +32,25 @@ export default function NestedGrid() {
 
   return (
     <div className={classes.root}>
+      <div style={{ paddingLeft: 15 }}>
       <Grid container spacing={1}>
-        <Grid container item xs={12} spacing={3}>
+        <Grid container item xs={12} spacing={2}>
           <FormRow />
         </Grid>
-        <Grid container item xs={12} spacing={3}>
+        <Grid container item xs={12} spacing={2}>
           <FormRow />
         </Grid>
-        <Grid container item xs={12} spacing={3}>
+        <Grid container item xs={12} spacing={2}>
           <FormRow />
         </Grid>
-        <Grid container item xs={12} spacing={3}>
+        <Grid container item xs={12} spacing={2}>
           <FormRow />
         </Grid>
-        <Grid container item xs={12} spacing={3}>
+        <Grid container item xs={12} spacing={2}>
           <FormRow />
         </Grid>
       </Grid>
+      </div>
     </div>
   );
 }

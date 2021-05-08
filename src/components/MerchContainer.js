@@ -6,15 +6,15 @@ import CardMedia from '@material-ui/core/CardMedia';
 import {useSpring, animated} from 'react-spring'
 import PlaceholderImg from '../images/placeholder.png'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    flexGrow: 1,
+    flexGrow: 1
   },
-//   marginAutoItem: {
-//     margin: 'auto'
-//   },
-});
+  marginAutoItem: {
+    padding: theme.spacing(2),
+  },
+}));
 
 export default function NestedGrid() {
   const classes = useStyles();
@@ -34,7 +34,7 @@ export default function NestedGrid() {
                 alt="placeholder"
                 image={PlaceholderImg}
                 title="placeholder"
-                // className={classes.marginAutoItem}
+                className={classes.marginAutoItem}
                 />
             </CardActionArea>
         </Card>

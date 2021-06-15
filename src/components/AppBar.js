@@ -83,7 +83,7 @@ export default function BackToTop(props) {
       <AppBar style={{backgroundColor: 'transparent'}}>
         <Toolbar className={classes.rightToolbar} >
           <InstagramIcon className={classes.icon} onClick={()=> window.open("https://instagram.com/svncrvsher?igshid=14i3ibkybo5oe", "_blank")}/>
-          <FacebookIcon className={classes.icon} onClick={()=> window.open("https://www.facebook.com/svncrvsher/", "_blank")}/>
+          <FacebookIcon className={classes.icon} onClick={()=> window.open("https://www.facebook.com/suncrusherband/", "_blank")}/>
           <YouTubeIcon className={classes.icon} onClick={()=> window.open("https://youtube.com/channel/UCsbWjZ1xagEe0w7YJlCys5Q", "_blank")}/>
           <Icon icon={spotifyIcon} className={classes.icon} onClick={()=> window.open("https://open.spotify.com/artist/0iQy7yKIe8wEuh7x3xp9HV?si=aWlv4A2gQLeswaskdanXhA", "_blank")}/>
         </Toolbar>

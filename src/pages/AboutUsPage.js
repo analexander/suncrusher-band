@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '../components/AppBar';
 import BottomAppBar from '../components/BottomAppBar';
 import AboutUs from '../components/AboutUs';
+import SillyHeroImage from '../components/SillyHeroImage';
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -17,6 +18,7 @@ export default function MerchStore() {
         <div className={classes.root}>
             <AppBar />
             <AboutUs />
+            <SillyHeroImage />
             <BottomAppBar />
         </div>
     )

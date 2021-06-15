@@ -1,7 +1,8 @@
 import React from 'react';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import LandingPage from './pages/LandingPage'
+import LandingPage from './pages/LandingPage';
 import MerchStore from './pages/MerchStore';
+import AboutUsPage from './pages/AboutUsPage';
 import { Route, Switch } from "wouter";
 
 const theme = createMuiTheme({
@@ -24,6 +25,7 @@ function App() {
         <Switch>
         <Route path="/" component={LandingPage} />
         <Route path="/merch" component={MerchStore} />
+        <Route path="/about" component={AboutUsPage} />
         </Switch>
     </div>
     </ThemeProvider>

@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import {useSpring, animated} from 'react-spring'
-import PlaceholderImg from '../images/placeholder.png'
+import SuncrusherMask2 from '../images/suncrushermask2.jpeg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,7 +32,7 @@ export default function NestedGrid() {
                 <CardMedia
                 component="img"
                 alt="placeholder"
-                image={PlaceholderImg}
+                image={SuncrusherMask2}
                 title="placeholder"
                 className={classes.marginAutoItem}
                 />

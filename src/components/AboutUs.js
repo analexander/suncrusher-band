@@ -36,7 +36,7 @@ export default function OutlinedCard() {
 
   return (
     <animated.div style={props}>
-    <Card className={classes.root} variant="outlined" style={{backgroundColor: 'black'}}>
+    <Card className={classes.root} style={{backgroundColor: 'black'}}>
       <CardContent>
         <Typography className={classes.title} gutterBottom>
           Bio

@@ -9,7 +9,8 @@ const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     display: 'flex',
-    justify: 'space-around'
+    justify: 'center',
+    alignItems: 'center'
   }
 });
 
@@ -19,13 +20,13 @@ export default function NestedGrid() {
   function FormRow() {
     return (
       <React.Fragment>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={9} md={7}>
           <ShirtContainer />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={9} md={7}>
           <Mask1Container />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={9} md={7}>
           <Mask2Container />
         </Grid>
       </React.Fragment>

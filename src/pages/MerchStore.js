@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import AppBar from '../components/AppBar';
 import BottomAppBar from '../components/BottomAppBar';
 import MerchGridContainer from '../components/MerchGridContainer';
@@ -7,6 +8,13 @@ import MerchGridContainer from '../components/MerchGridContainer';
 const useStyles = makeStyles(() => ({
     root: {
         flexGrow: 1,
+    title: {
+        fontSize: 30,
+        fontFamily: [
+            'Creepster',
+            'Cursive',
+            ].join(','),
+         },
     }
 }));
 

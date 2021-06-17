@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import ShirtContainer from './ShirtContainer';
 import Mask1Container from './Mask1Container';
 import Mask2Container from './Mask2Container';
@@ -8,10 +9,18 @@ import Mask2Container from './Mask2Container';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
+    
+  },
+  title: {
     display: 'flex',
-    justify: 'center',
-    alignItems: 'center'
-  }
+    color: 'white',
+    justifyContent: 'center',
+    fontSize: 30,
+    fontFamily: [
+        'Creepster',
+        'Cursive',
+        ].join(','),
+     }
 });
 
 export default function NestedGrid() {
@@ -35,12 +44,17 @@ export default function NestedGrid() {
 
   return (
     <div className={classes.root}>
-      <div style={{ paddingLeft: 15, marginBottom: 20}}>
-      <Grid container spacing={2}>
-        <Grid container item xs={12} spacing={2}>
-          <FormRow />
+        <Typography className={classes.title} gutterBottom>
+            Merch
+        </Typography>
+      <div style={{ justify: 'center', marginBottom: 20 }}>
+        <Grid container spacing={2}>
+          <Grid container item xs={12} spacing={2}
+            alignItems="center"
+            justify="center">
+            <FormRow />
+          </Grid>
         </Grid>
-      </Grid>
       </div>
     </div>
   );

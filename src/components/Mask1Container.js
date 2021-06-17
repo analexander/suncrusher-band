@@ -9,7 +9,7 @@ import SuncrusherMask from '../images/suncrushermask.jpeg'
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    flexGrow: 1
+    flexGrow: 1,
   },
   marginAutoItem: {
     padding: theme.spacing(2),

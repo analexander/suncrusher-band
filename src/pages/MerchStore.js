@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import AppBar from '../components/AppBar';
 import BottomAppBar from '../components/BottomAppBar';
 import MerchGridContainer from '../components/MerchGridContainer';

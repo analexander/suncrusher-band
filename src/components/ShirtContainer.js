@@ -9,11 +9,9 @@ import SuncrusherShirt from '../images/suncrushershirt.jpeg'
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    flexGrow: 1
-  },
-  marginAutoItem: {
-    padding: theme.spacing(2),
-  },
+    flexGrow: 1,
+    marginRight: 0
+  }
 }));
 
 export default function NestedGrid() {
@@ -33,8 +31,8 @@ export default function NestedGrid() {
                 component="img"
                 alt="placeholder"
                 image={SuncrusherShirt}
-                title="placeholder"
-                className={classes.marginAutoItem}
+                title="Suncrusher Shirt"
+                onClick={()=> window.open("https://suncrusher.bigcartel.com/product/suncrusher-t-shirt", "_blank")}
                 />
             </CardActionArea>
         </Card>

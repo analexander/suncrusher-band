@@ -10,10 +10,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexGrow: 1,
-  },
-  marginAutoItem: {
-    padding: theme.spacing(2),
-  },
+    marginRight: 0
+  }
 }));
 
 export default function NestedGrid() {
@@ -33,8 +31,8 @@ export default function NestedGrid() {
                 component="img"
                 alt="placeholder"
                 image={SuncrusherMask}
-                title="placeholder"
-                className={classes.marginAutoItem}
+                title="Suncrusher Typography Mask"
+                onClick={()=> window.open("https://suncrusher.bigcartel.com/product/suncrusher-mask-2", "_blank")}
                 />
             </CardActionArea>
         </Card>

@@ -8,19 +8,29 @@ import Mask2Container from './Mask2Container';
 
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1,
-    
+    flexGrow: 1
+
   },
   title: {
     display: 'flex',
     color: 'white',
     justifyContent: 'center',
+    fontSize: 80,
+    fontFamily: [
+      'Creepster',
+      'Cursive',
+    ].join(','),
+  },
+  merchName: {
+    display: 'flex',
+    color: 'white',
+    justifyContent: 'center',
     fontSize: 30,
     fontFamily: [
-        'Creepster',
-        'Cursive',
-        ].join(','),
-     }
+      'Creepster',
+      'Cursive',
+    ].join(','),
+  }
 });
 
 export default function NestedGrid() {
@@ -29,14 +39,23 @@ export default function NestedGrid() {
   function FormRow() {
     return (
       <React.Fragment>
-        <Grid item xs={12} sm={9} md={7}>
+        <Grid item xs={12} sm={9} md={8}>
           <ShirtContainer />
+          <Typography className={classes.merchName} gutterBottom>
+            Suncrusher T-Shirt - $20
+          </Typography>
         </Grid>
-        <Grid item xs={12} sm={9} md={7}>
+        <Grid item xs={12} sm={9} md={8}>
           <Mask1Container />
+          <Typography className={classes.merchName} gutterBottom>
+            Suncrusher Typography Mask - $15
+          </Typography>
         </Grid>
-        <Grid item xs={12} sm={9} md={7}>
+        <Grid item xs={12} sm={9} md={8}>
           <Mask2Container />
+          <Typography className={classes.merchName} gutterBottom>
+            Suncrusher Logo Mask - $15
+          </Typography>
         </Grid>
       </React.Fragment>
     );
@@ -44,10 +63,10 @@ export default function NestedGrid() {
 
   return (
     <div className={classes.root}>
-        <Typography className={classes.title} gutterBottom>
-            Merch
-        </Typography>
-      <div style={{ justify: 'center', marginBottom: 20 }}>
+      <Typography className={classes.title} gutterBottom>
+        Merch
+      </Typography>
+      <div style={{ justify: 'center', marginBottom: 20, marginRight: 0 }}>
         <Grid container spacing={2}>
           <Grid container item xs={12} spacing={2}
             alignItems="center"

@@ -9,11 +9,9 @@ import SuncrusherMask2 from '../images/suncrushermask2.jpeg'
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    flexGrow: 1
-  },
-  marginAutoItem: {
-    padding: theme.spacing(2),
-  },
+    flexGrow: 1,
+    marginRight: 0
+  }
 }));
 
 export default function NestedGrid() {
@@ -33,8 +31,8 @@ export default function NestedGrid() {
                 component="img"
                 alt="placeholder"
                 image={SuncrusherMask2}
-                title="placeholder"
-                className={classes.marginAutoItem}
+                title="Suncrusher Logo Mask"
+                onClick={()=> window.open("https://suncrusher.bigcartel.com/product/suncrusher-mask", "_blank")}
                 />
             </CardActionArea>
         </Card>

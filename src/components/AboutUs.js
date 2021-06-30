@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   title: {
-    fontSize: 30,
+    fontSize: 50,
     fontFamily: [
         'Creepster',
         'Cursive',

@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     display: 'flex',
     color: 'white',
     justifyContent: 'center',
-    fontSize: 30,
+    fontSize: 25,
     fontFamily: [
       'Creepster',
       'Cursive',

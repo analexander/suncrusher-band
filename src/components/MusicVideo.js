@@ -15,7 +15,7 @@ const classes = useStyles();
   return (
     <div className={classes.root}>
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=x_qZ1-uTW4Y&t=0s"
+        url="https://www.youtube.com/watch?v=FZUrHQqvuTM"
       />
     </div>
   )

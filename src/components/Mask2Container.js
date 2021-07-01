@@ -29,7 +29,7 @@ export default function NestedGrid() {
             <CardActionArea>
                 <CardMedia
                 component="img"
-                alt="placeholder"
+                alt="Suncrusher Logo Mask"
                 image={SuncrusherMask2}
                 title="Suncrusher Logo Mask"
                 onClick={()=> window.open("https://suncrusher.bigcartel.com/product/suncrusher-mask", "_blank")}

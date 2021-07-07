@@ -5,10 +5,20 @@ import AppBar from '../components/AppBar'
 import HeroImage from '../components/HeroImage'
 import BottomAppBar from '../components/BottomAppBar';
 import MusicVideo from '../components/MusicVideo';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(() => ({
     root: {
         flexGrow: 1,
+    },
+    musicVidTitle: {
+        fontSize: 50,
+        fontFamily: [
+            'Creepster',
+            'Cursive',
+        ].join(','),
+        color: 'red',
+        textAlign: 'center'
     }
 }));
 
@@ -30,6 +40,9 @@ export default function LandingPage() {
                     <HeroImage />
                 </Grid>
                 <Grid item xs={12}>
+                    <Typography className={classes.musicVidTitle} gutterBottom>
+                        Blood Moon - Out Now!!!
+                    </Typography>
                     <MusicVideo />
                 </Grid>
                 <Grid item xs={12}>

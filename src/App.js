@@ -3,6 +3,7 @@ import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import LandingPage from './pages/LandingPage';
 import MerchStore from './pages/MerchStore';
 import AboutUsPage from './pages/AboutUsPage';
+import ShowPage from './pages/ShowPage'
 import { Route, Switch } from "wouter";
 
 const theme = createMuiTheme({
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" component={LandingPage} />
         <Route path="/merch" component={MerchStore} />
         <Route path="/about" component={AboutUsPage} />
+        <Route path="/shows" component={ShowPage} />
         </Switch>
     </div>
     </ThemeProvider>

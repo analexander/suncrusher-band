@@ -53,7 +53,8 @@ export default function BottomAppBar() {
         <Link to="/"><img src={Logo} className={classes.logo} alt="logo"/></Link>
         <Link to="/" className={classes.navText}>HOME</Link>
         <Link to="/about" className={classes.navText}>ABOUT</Link>
-        <Link to="/merch"className={classes.navText}>SHOP</Link>
+        <Link to="/merch" className={classes.navText}>SHOP</Link>
+        <Link to="/shows" className={classes.navText}>SHOWS</Link>
         </Toolbar>
       </AppBar>
     </React.Fragment>

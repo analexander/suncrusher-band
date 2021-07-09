@@ -5,6 +5,8 @@ import Typography from '@material-ui/core/Typography';
 import ShirtContainer from './ShirtContainer';
 import Mask1Container from './Mask1Container';
 import Mask2Container from './Mask2Container';
+import SuncrusherPolish from './SuncrusherPolish';
+import BloodMoonPolish from './BloodMoonPolish';
 
 const useStyles = makeStyles({
   root: {
@@ -55,6 +57,18 @@ export default function NestedGrid() {
           <Mask2Container />
           <Typography className={classes.merchName} gutterBottom>
             Suncrusher Logo Mask - $15
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={9} md={8}>
+          <SuncrusherPolish />
+          <Typography className={classes.merchName} gutterBottom>
+            Suncrusher Nail Polish - $11
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={9} md={8}>
+          <BloodMoonPolish />
+          <Typography className={classes.merchName} gutterBottom>
+            Blood Moon Nail Polish - $11
           </Typography>
         </Grid>
       </React.Fragment>

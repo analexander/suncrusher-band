@@ -50,7 +50,7 @@ export default function BottomAppBar() {
       </Paper>
       <AppBar className={classes.appBar} style={{backgroundColor: 'black'}}>
         <Toolbar>
-        <img src={Logo} alt="logo" className={classes.logo}/>
+        <Link to="/"><img src={Logo} className={classes.logo} alt="logo"/></Link>
         <Link to="/" className={classes.navText}>HOME</Link>
         <Link to="/about" className={classes.navText}>ABOUT</Link>
         <Link to="/merch"className={classes.navText}>SHOP</Link>

@@ -44,7 +44,7 @@ export default function NestedGrid() {
         <Grid item xs={12} sm={9} md={8}>
           <ShirtContainer />
           <Typography className={classes.merchName} gutterBottom>
-            Suncrusher T-Shirt - $20
+            Suncrusher T-Shirt - $20 (S, M, L, XL, 2XL)
           </Typography>
         </Grid>
         <Grid item xs={12} sm={9} md={8}>

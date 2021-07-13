@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
-import Logo from '../images/SunCrusher-logo_UPDATED_W.png'
+import Logo from '../images/SunCrusher-logo_UPDATED_W.png';
 import { Link } from 'wouter';
 
 const useStyles = makeStyles((theme) => ({
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     top: 'auto',
     bottom: 0,
+    display: 'flex'
   },
   grow: {
     flexGrow: 1,

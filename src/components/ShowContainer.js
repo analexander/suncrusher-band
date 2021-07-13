@@ -26,6 +26,7 @@ const useStyles = makeStyles({
     color: 'red',
     justifyContent: 'center',
     fontSize: 25,
+    textAlign: 'center',
     fontFamily: [
       'Creepster',
       'Cursive',

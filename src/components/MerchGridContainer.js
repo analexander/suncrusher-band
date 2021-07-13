@@ -28,6 +28,7 @@ const useStyles = makeStyles({
     color: 'white',
     justifyContent: 'center',
     fontSize: 25,
+    textAlign: 'center',
     fontFamily: [
       'Creepster',
       'Cursive',
@@ -44,7 +45,8 @@ export default function NestedGrid() {
         <Grid item xs={12} sm={9} md={8}>
           <ShirtContainer />
           <Typography className={classes.merchName} gutterBottom>
-            Suncrusher T-Shirt - $20 (S, M, L, XL, 2XL)
+            Suncrusher T-Shirt - $20<br/>
+            (S, M, L, XL, 2XL)
           </Typography>
         </Grid>
         <Grid item xs={12} sm={9} md={8}>

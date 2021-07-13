@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex'
   },
   grow: {
+    display: 'flex',
     flexGrow: 1,
   },
   logo: {
@@ -50,7 +51,7 @@ export default function BottomAppBar() {
       <Paper square className={classes.paper}>
       </Paper>
       <AppBar className={classes.appBar} style={{backgroundColor: 'black'}}>
-        <Toolbar>
+        <Toolbar className={classes.grow}>
         <Link to="/"><img src={Logo} className={classes.logo} alt="logo"/></Link>
         <Link to="/" className={classes.navText}>HOME</Link>
         <Link to="/about" className={classes.navText}>ABOUT</Link>
